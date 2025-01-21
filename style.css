@@ -190,6 +190,13 @@ nav {
     /* border: 2px solid tomato; */
     padding-top: 6%;
   }
+  .txt-heading h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+  .txt-heading p {
+    font-size: 1rem;
+  }
   .enroll-btn button {
     width: 40vw;
     height: 10vh;
