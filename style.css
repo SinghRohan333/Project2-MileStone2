@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/* font-family: "Quicksand", serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header,
+main {
+  font-family: "Quicksand", serif;
+}
+main {
+  background-image: url("images/bg.png");
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-header {
+  display: flex;
+  /* border: 1px solid saddlebrown; */
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.icon-header h1 {
+  padding-top: 1%;
+  font-size: 2.5rem;
+  color: #111111;
+  font-weight: 700;
+}
+.nav-menu {
+  display: flex;
+  /* border: 1px solid blue; */
+  margin-top: 3%;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: -10%; */
+}
+.nav {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  list-style-type: none;
+  margin-right: 10%;
+  /* border: 2px solid yellow; */
+  padding-top: 2%;
+}
+.nav a {
+  text-decoration: none;
+}
+.home a,
+.color-txt1 {
+  color: #fea301;
+}
+.about a,
+.color-txt2 {
+  color: #01acfd;
+}
+.facility a {
+  color: #05d4df;
+}
+.admission a {
+  color: #5d58ef;
+}
+.contact-btn {
+  display: flex;
+  margin-top: 3%;
+  /* border: 1px solid black; */
+  margin-right: 7%;
+  justify-content: center;
+  align-items: center;
+}
+.contact-btn button {
+  background: #fea301;
+  border: 0px;
+  border-radius: 12px;
+  text-align: center;
+  color: #ffffff;
+  width: 15vw;
+  height: 7vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-btn button:hover {
+  background-color: crimson;
+}
+.hambar {
+  display: none;
+}
+.mobile-border hr {
+  visibility: hidden;
+  margin-top: 2%;
+  border: 1.5px solid #fea301;
+}
+.container-heading {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  /* border: 1px solid darkgreen; */
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.txt-heading {
+  text-align: justify;
+  /* border: 2px solid tomato; */
+  padding-top: 20%;
+}
+.txt-heading h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+.txt-heading p {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #111111;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.enroll-btn {
+  justify-content: center;
+  align-items: center;
+}
+.enroll-btn button {
+  background-color: #111111;
+  border: 0px;
+  border-radius: 12px;
+  text-align: center;
+  color: #ffffff;
+  width: 15vw;
+  height: 7vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.enroll-btn button:hover {
+  background-color: #002d62;
+  color: aliceblue;
+}
+.banner {
+  margin-left: 3%;
+}
+
+.std-txt {
+  margin-left: 5%;
+  margin-top: 3%;
+  /* border: 1px solid blueviolet; */
+}
+.std-txt h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+/* responsive media query */
+@media screen and (max-width: 576px) {
+  .icon-header h1 {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .contact-btn {
+    display: none;
+  }
+  .hambar {
+    display: flex;
+    margin-top: 5%;
+    margin-right: 5%;
+    font-size: 3rem;
+  }
+  .mobile-border hr {
+    visibility: visible;
+  }
+  .container-heading {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .banner {
+    order: 1;
+  }
+  .txt-heading {
+    order: 2;
+    text-align: center;
+    /* border: 2px solid tomato; */
+    padding-top: 6%;
+  }
+  .enroll-btn button {
+    width: 40vw;
+    height: 10vh;
+  }
+  .std-txt h2 {
+    padding-top: 7%;
+  }
+}
