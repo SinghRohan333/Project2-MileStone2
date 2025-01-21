@@ -139,7 +139,10 @@ nav {
 .banner {
   margin-left: 3%;
 }
-
+.banner img {
+  width: 80%;
+  height: auto;
+}
 .std-txt {
   margin-left: 5%;
   margin-top: 3%;
@@ -176,6 +179,10 @@ nav {
   }
   .banner {
     order: 1;
+  }
+  .banner img {
+    width: 90%;
+    height: auto;
   }
   .txt-heading {
     order: 2;
