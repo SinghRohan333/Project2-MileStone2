@@ -606,6 +606,7 @@ nav {
   .stories-3 h3,
   .stories-4 h3,
   .stories-5 h3 {
+    display: none;
     font-size: 0.96rem;
     font-weight: bold;
     text-align: center;
