@@ -6,8 +6,12 @@
   padding: 0;
 }
 header,
-main {
+main,
+footer {
   font-family: "Quicksand", serif;
+}
+footer {
+  background-color: #01acfd;
 }
 .section-01 {
   background-image: url("images/bg.png");
@@ -17,6 +21,7 @@ main {
   background: url("images/bg.png"),
     linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
   background-size: cover;
+  padding-bottom: 7%;
 }
 
 nav {
@@ -286,7 +291,9 @@ nav {
 .right-arrow {
   margin-left: 1%;
 }
-
+/* .section-02 {
+  margin-bottom: 5%;
+} */
 .story-txt {
   /* border: 1px solid rebeccapurple; */
   margin-top: 7%;
@@ -480,6 +487,85 @@ nav {
 .view-btn button:hover {
   background-color: #002d62;
 }
+.myfoot {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid gold; */
+}
+.tinyEdu {
+  display: flex;
+  width: 30%;
+  margin-left: 5%;
+  margin-top: 7%;
+  /* border: 2px solid green; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
+}
+
+.kidsEdu {
+  display: flex;
+}
+.kidsEdu h1 {
+  font-size: 2.6rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.kid-edu p {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-top: 5%;
+  text-align: justify;
+}
+.navMenu {
+  display: flex;
+  margin-top: 7%;
+  width: 30%;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
+}
+.navbar {
+  margin-top: 10%;
+}
+.about-school h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.navbar li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #ffffff;
+  padding-top: 5%;
+  cursor: pointer;
+}
+.social-media {
+  display: flex;
+  margin-top: 7%;
+  /* border: 2px solid darkblue; */
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
+}
+.keepTouch h1 {
+  font-size: 1.63rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.social-icon {
+  display: flex;
+}
+.social-icon img {
+  padding-right: 4%;
+  margin-top: 8%;
+  width: 100%;
+  cursor: pointer;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .icon-header h1 {
@@ -548,6 +634,71 @@ nav {
   .section-01 {
     background-size: 100%;
   }
+  /* .stories-1 {
+    display: none;
+  }
+  .collage-stories2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width: 100%;
+  }
+  .str-2 {
+    width: 60%;
+    height: 3vh;
+    top: 63%;
+    left: 10%;
+  }
+  .str-3 {
+    width: 60%;
+    height: 3vh;
+    top: 63%;
+    left: 10%;
+  }
+  .str-4 {
+    width: 60%;
+    height: 3vh;
+    top: 63%;
+    left: 10%;
+  }
+  .str-5 {
+    width: 60%;
+    height: 3vh;
+    top: 64.9%;
+    left: 10%;
+  }
+  .view-btn button {
+    width: 20%;
+    height: 5vh;
+  }
+  .str-2 p,
+  .str-3 p,
+  .str-4 p,
+  .str-5 p {
+    font-size: 0.8rem;
+  } */
+  .myfoot {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  .social-media,
+  .navMenu,
+  .tinyEdu {
+    width: 50%;
+  }
+  .kidsEdu img {
+    padding-left: 9%;
+  }
+  .kid-edu p {
+    padding-left: 12%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 576px) {
   .stories-1 {
     display: none;
   }
@@ -557,59 +708,187 @@ nav {
     margin-top: 2%;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
     width: 100%;
-    height: 90vh;
   }
   .str-2 {
-    width: 75%;
-    /* height: 5vh; */
-    top: 48%;
+    width: 60%;
+    height: 3vh;
+    top: 63%;
     left: 10%;
   }
   .str-3 {
-    width: 75%;
-    /* height: 5vh; */
-    top: 50%;
+    width: 60%;
+    height: 3vh;
+    top: 63%;
     left: 10%;
   }
   .str-4 {
-    width: 75%;
-    /* height: 5vh; */
-    top: 50%;
+    width: 60%;
+    height: 3vh;
+    top: 63%;
     left: 10%;
   }
   .str-5 {
-    width: 75%;
-    /* height: 5vh; */
-    top: 50%;
+    width: 60%;
+    height: 3vh;
+    top: 64.9%;
     left: 10%;
+  }
+  .view-btn button {
+    width: 20%;
+    height: 5vh;
   }
   .str-2 p,
   .str-3 p,
   .str-4 p,
   .str-5 p {
-    font-size: 0.7rem;
-    color: #ffffff;
-    text-align: center;
+    font-size: 0.8rem;
   }
-  .view-btn button {
-    width: 40%;
-    height: 5vh;
+}
+@media screen and (max-width: 360px) {
+  .stories-1 {
+    display: none;
   }
-  .stories-2,
-  .stories-3,
-  .stories-4,
-  .stories-5 {
-    height: 40vh;
+  .collage-stories2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
   }
+  .str-2 p,
+  .str-3 p,
+  .str-4 p,
+  .str-5 p {
+    font-size: 0.6rem;
+  }
+  .str-2 {
+    width: 60%;
+    height: 2vh;
+    top: 52%;
+    left: 10%;
+  }
+  .str-3 {
+    width: 60%;
+    height: 2vh;
+    top: 52%;
+    left: 10%;
+  }
+  .str-4 {
+    width: 60%;
+    height: 2vh;
+    top: 48%;
+    left: 10%;
+  }
+  .str-5 {
+    width: 60%;
+    height: 2vh;
+    top: 52%;
+    left: 10%;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 414.99px) {
+  .stories-1 {
+    display: none;
+  }
+  .collage-stories2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .str-2 p,
+  .str-3 p,
+  .str-4 p,
+  .str-5 p {
+    font-size: 0.6rem;
+  }
+  .str-2 {
+    width: 60%;
+    height: 2vh;
+    top: 65%;
+    left: 10%;
+  }
+  .str-3 {
+    width: 60%;
+    height: 2vh;
+    top: 65%;
+    left: 10%;
+  }
+  .str-4 {
+    width: 60%;
+    height: 2vh;
+    top: 53%;
+    left: 10%;
+  }
+  .str-5 {
+    width: 60%;
+    height: 2vh;
+    top: 65%;
+    left: 10%;
+  }
+  .stories-1 h3,
   .stories-2 h3,
   .stories-3 h3,
   .stories-4 h3,
   .stories-5 h3 {
+    padding-top: 1%;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 499px) {
+  .stories-1 {
     display: none;
-    /* font-size: 0.96rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 24%; */
+  }
+  .collage-stories2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .str-2 p,
+  .str-3 p,
+  .str-4 p,
+  .str-5 p {
+    font-size: 0.6rem;
+  }
+  .str-2 {
+    width: 60%;
+    height: 2vh;
+    top: 67%;
+    left: 10%;
+  }
+  .str-3 {
+    width: 60%;
+    height: 2vh;
+    top: 67%;
+    left: 10%;
+  }
+  .str-4 {
+    width: 60%;
+    height: 2vh;
+    top: 67%;
+    left: 10%;
+  }
+  .str-5 {
+    width: 60%;
+    height: 2vh;
+    top: 67%;
+    left: 10%;
+  }
+  .stories-1 h3,
+  .stories-2 h3,
+  .stories-3 h3,
+  .stories-4 h3,
+  .stories-5 h3 {
+    padding-top: 1%;
   }
 }
