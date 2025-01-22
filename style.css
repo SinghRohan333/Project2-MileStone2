@@ -607,9 +607,9 @@ nav {
   .stories-4 h3,
   .stories-5 h3 {
     display: none;
-    font-size: 0.96rem;
+    /* font-size: 0.96rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 24%;
+    margin-top: 24%; */
   }
 }
