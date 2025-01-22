@@ -558,29 +558,30 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 90vh;
   }
   .str-2 {
     width: 75%;
     /* height: 5vh; */
-    top: 60%;
+    top: 48%;
     left: 10%;
   }
   .str-3 {
     width: 75%;
     /* height: 5vh; */
-    top: 60%;
+    top: 50%;
     left: 10%;
   }
   .str-4 {
     width: 75%;
     /* height: 5vh; */
-    top: 60%;
+    top: 50%;
     left: 10%;
   }
   .str-5 {
     width: 75%;
     /* height: 5vh; */
-    top: 60%;
+    top: 50%;
     left: 10%;
   }
   .str-2 p,
@@ -592,7 +593,22 @@ nav {
     text-align: center;
   }
   .view-btn button {
-    width: 20%;
+    width: 40%;
     height: 5vh;
+  }
+  .stories-2,
+  .stories-3,
+  .stories-4,
+  .stories-5 {
+    height: 40vh;
+  }
+  .stories-2 h3,
+  .stories-3 h3,
+  .stories-4 h3,
+  .stories-5 h3 {
+    font-size: 0.96rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24%;
   }
 }
