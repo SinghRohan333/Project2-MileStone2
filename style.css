@@ -716,8 +716,11 @@ nav {
   .kid-edu p {
     padding-left: 12%;
   }
-  .copyright-txt {
+  /* .copyright-txt {
     display: none;
+  } */
+  .copyright-txt p {
+    padding-left: 20%;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 576px) {
@@ -811,6 +814,10 @@ nav {
     top: 52%;
     left: 10%;
   }
+  .view-btn button {
+    width: 40%;
+    height: 5vh;
+  }
 }
 @media screen and (min-width: 361px) and (max-width: 414.99px) {
   .stories-1 {
@@ -862,6 +869,11 @@ nav {
   .stories-5 h3 {
     padding-top: 1%;
   }
+
+  .view-btn button {
+    width: 40%;
+    height: 5vh;
+  }
 }
 @media screen and (min-width: 415px) and (max-width: 499px) {
   .stories-1 {
@@ -912,5 +924,10 @@ nav {
   .stories-4 h3,
   .stories-5 h3 {
     padding-top: 1%;
+  }
+
+  .view-btn button {
+    width: 40%;
+    height: 5vh;
   }
 }
